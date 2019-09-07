@@ -54,6 +54,8 @@ install:
 script:
   - ls -al
   - git status
+  - cat Makefile
+  - file dropbear
   - ~/inst/bin/dropbearkey -t rsa -f testrsa
   - ~/inst/bin/dropbearkey -t dss -f testdss
   - ~/inst/bin/dropbearkey -t ecdsa -f testec256 -s 256
